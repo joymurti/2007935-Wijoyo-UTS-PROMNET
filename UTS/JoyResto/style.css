@@ -1,0 +1,425 @@
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar .login {
+    float: right;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar #logo {
+    color: #F9C56A;
+}   
+.navbar #logo:hover {
+    color: #F9C56A;
+    background-color: transparent;
+    cursor: default;
+    pointer-events: none;
+}
+.navbar a:hover {
+    background-color: #DDD;
+    color: black;
+}
+.navbar .icon {
+    display: none;
+}
+.parallax-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    color: white;
+}
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("assets/bg_body.jpg");
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+}
+.regular-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top: 5vh;
+    background-color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+.content-home {
+    margin: 0;
+    padding: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#regular-content {
+    padding: 0;
+}
+#intro-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+.title-container hr{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #F9C56A;
+    width: 30%;
+}
+.title-text {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #4b4741;
+    text-align: center;
+}
+.subtitle-text {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #777;
+}
+.history-content {
+    display: flex;
+    justify-content: space-between;
+}
+.history-isi, .card-isi {
+    padding: 10px;
+}
+#special {
+    background: #fff url('assets/food2.png') no-repeat;
+    background-size: 100% 100%;
+}
+.card {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btn {
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: #f9c56a;
+}
+.btn:hover {
+    background-color: #F7B23D;
+    cursor: pointer;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-pesan {
+    width: 90%;
+    height: 100%;
+    border: 0.5px solid #ddd;
+}
+
+.row .col {
+    padding: 20px 20px;
+    top: 50%;
+    left: 50%;
+}
+
+.row {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#reservation, #menu, #fitur, #about, #special {
+    overflow: auto;
+}
+
+.col input {
+    border: none;
+    background-color: #DDD;
+    padding: 5px 18px;
+    min-width: 85%;
+}
+#fitur {
+    background: #fff url('assets/food4.png') no-repeat;
+    background-size: 100% 100%;
+}
+.card-fitur {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-fitur-isi  {
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.card-fitur-isi img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.card-fitur-isi h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.card-fitur-isi hr{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #F9C56A;
+    width: 30%;
+}
+.card-fitur-isi p {
+    text-align: justify;
+}
+
+.card-menu-isi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #ECECEC;
+    margin-bottom: 30px;
+}
+.card-menu-isi img {
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+}
+.card-menu-isi h1 {
+    font-size: 28px;
+    color: #F9C56A;
+}
+.card-menu-isi p {
+    text-align: justify;
+    padding: 10px;
+}
+.footer-bar {
+    background-color: #1C1C1E;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: small;
+}
+#footer-content {
+    display: none;
+}
+#footer-content h3 {
+    color: #F9C56A;
+}
+.footer-recent {
+    display: flex;
+    flex-direction: row;
+}
+.footer-recent img {
+    padding-right: 10px;
+}
+.reach-content1 {
+    display: flex;
+    align-items: center;
+}
+.reach-content1 .material-icons {
+    padding-right: 10px;
+    color: #F9C56A;
+}
+
+#map { 
+    height: 240px; 
+    width: 400px;
+}
+
+#title-text {
+    color: #F9C56A; font-family: Italianno; font-size: 48px;
+}
+
+@media (min-width: 620px) {
+    .col {
+        float: left;
+        width: 26vw;
+    }
+      
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media (min-width: 1011px) {
+    #footer-content {
+        background: black url('assets/food8.png') no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        text-align: justify;
+        display: flex;
+    }
+    .col {
+        width: 23vw;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 1210px) {
+    .card-fitur {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+    .card-fitur-isi {
+        margin: 0;
+    }
+    @media (max-width: 395px) {
+        .card-fitur-isi p {
+            font-size: small;
+            word-wrap: break-word;
+        }
+        .card-fitur-isi h1 {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 624px) {
+    .card-fitur-isi img {
+        display: none;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 999px) {
+    #menu-row .col {
+        width: 23vw;   
+    }
+    @media (max-width: 919px) {
+        .card-menu-isi h1 {
+            font-size: 24px;
+        }
+        .card-menu-isi h3 {
+            font-size: 0.95em;
+        }
+    }
+    @media (max-width: 754px) {
+        .card-menu-isi h1 {
+            font-size: 20px;
+        }
+        .card-menu-isi h3 {
+            font-size: 0.90em;
+        }
+    }
+    @media (max-width: 642px) {
+        .card-menu-isi h1 {
+            font-size: 18px;
+        }
+        .card-menu-isi h3 {
+            font-size: 0.85em;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .history-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+    #ttd {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    #special {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #title-text {
+        text-align: center;
+        font-size: 28px;
+    }
+    #intro-text {
+        font-size: small;
+    }
+}

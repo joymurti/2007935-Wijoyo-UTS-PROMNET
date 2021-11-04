@@ -1,0 +1,31 @@
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+table {
+    border: none;   
+    min-width: 100%;
+}
+
+table thead {
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+}
+
+#tindakan {
+    display: flex;
+    justify-content: space-evenly;
+}
