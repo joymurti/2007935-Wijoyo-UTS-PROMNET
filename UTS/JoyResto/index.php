@@ -156,7 +156,7 @@
                     <div class="col">
                     <?php } ?>
                         <div class="card-menu-isi">
-                            <img src="assets/<?php echo $row['gambar']; ?>">
+                            <img src="img/<?php echo $row['gambar']; ?>">
                             <h3><?php echo $row['nama']; ?></h3>
                             <p><?php echo $row['deskripsi']; ?></p>
                             <h1><?php echo rupiah($row['harga']); ?></h1>
