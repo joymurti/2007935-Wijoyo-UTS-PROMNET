@@ -7,8 +7,10 @@
         <?php 
             if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
         ?>
-            <a href="admin.php" style="background-color: #F9C56A;">Admin</a>
+            <a href="admin.php" style="background-color: #F9C56A;">Add Menu</a>
             <a href="logout.php" class="login">Logout</a>
+            <a href="" class="login" style="background-color: #000000; color: white; cursor: default;">Hi, <?php echo $_SESSION['username'];  ?></a>
+            <a href="menu-petugas.php" style="background-color: #F9C56A;" class="login">Admin</a>
         <?php } else { ?>
             <a href="login.php" class="login">Login</a>            
         <?php } ?>
