@@ -17,4 +17,4 @@ Tugas UTS Proment Wijoyo
 5. Selamat mencoba :)
 
 
-###NOTE: Jika ada bug tolong laporkan segera !!!
+##NOTE: Jika ada bug tolong laporkan segera !!!
