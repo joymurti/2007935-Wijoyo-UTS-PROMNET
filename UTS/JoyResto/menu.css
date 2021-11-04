@@ -1,18 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 html, body {
     height: 100%;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
+
 body {
     margin: 0;
     background: linear-gradient(45deg,#f9c56a,#5f2c82);
     font-family: sans-serif;
     font-weight: 100;
 }
+
 .transparan {
     width: 100%;
     min-height: 100vh;
@@ -21,6 +26,42 @@ body {
     align-items: center;
     margin-bottom: 2%;
 }
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #FFF;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+  
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #f9c56a;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+  
+form.example button:hover {
+    background: #F7B23D
+}
+  
+form.example::after {
+    content: "";
+    clear: both;
+display: table;
+}
+
 table {
     width: 800px;
     border-collapse: collapse;
@@ -58,7 +99,7 @@ tbody td:hover:before {
     background-color: rgba(255,255,255,0.2);
     z-index: -1;
 }
-button {
+.normal-button {
     display: block;
     width: 100%;
     padding: 15px 20px;
@@ -72,7 +113,7 @@ button {
     cursor: pointer;
     transition: .3s;
 }
-button:hover {
+.normal-button:hover {
     transform: translateY(-5px);
     background: #F7B23D;
 }
@@ -82,8 +123,7 @@ a {
 }
 #link-id {
     margin: 2%;
-    max-width: 100%;
-    width: 130vh;
+    width: 20%;
 }
 #add-btn {
     text-align: left;
@@ -99,4 +139,26 @@ a {
 }
 .delete:hover {
     background-color: #DB3C30;
+}
+.flex-row {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+@media screen and (max-width: 910px) {
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-row div {
+        width: 100%;
+        padding: 0;
+    }
 }
