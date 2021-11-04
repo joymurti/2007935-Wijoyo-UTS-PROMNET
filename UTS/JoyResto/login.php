@@ -94,17 +94,17 @@
                 <?php  } ?>
                 <br>
                 <?php if (!empty($username_err)) { ?>
-                        <div class="alert">
-                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                            <strong><?php echo $username_err ?></strong>
-                        </div>
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong><?php echo $username_err ?></strong>
+                    </div>
                 <?php } ?>
                 <br>
                 <?php if(!empty($password_err)) { ?>
-                        <div class="alert">
-                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                            <strong><?php echo $password_err ?></strong>
-                        </div>
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong><?php echo $password_err ?></strong>
+                    </div>
                 <?php } ?>
                 <br>
             </form>
