@@ -18,3 +18,6 @@ Tugas UTS Proment Wijoyo
 
 
 ### NOTE: Jika ada bug tolong laporkan segera !!!
+
+### LINK PENJELASAN CODE
+https://drive.google.com/drive/folders/1Tr18iuneFI6hgM4w0sXTtrQZlv2qZ2RE?usp=sharing
