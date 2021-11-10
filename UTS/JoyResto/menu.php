@@ -11,11 +11,6 @@
     if (isset($_GET['submit'])) {
         $sql = "SELECT * FROM menu WHERE nama LIKE '%".$_GET['search']."%' OR deskripsi LIKE '%".$_GET['search']."%'";
         $result = mysqli_query($link, $sql);
-        if (mysqli_num_rows($result) == 0) {
-            $show = "Data kosong !";
-        } else {
-            $show = "none";
-        }
     }
 ?>
 
@@ -63,17 +58,12 @@
                 <td>
                     <a href="crud_menu_edit.php?edit=<?php echo $row['id_menu']; ?>"><button class="update normal-button">Update</button></a>
                     <br>
-                    <a href="delete.php?id=<?php echo $row['id_menu']; ?>"><button class="delete normal-button">Delete</button></a>
+                    <a href="delete.php?id=<?php echo $row['id_menu']; ?>" onclick="return confirm('Hapus Data?');"><button class="delete normal-button">Delete</button></a>
                 </td>
             </tr>
             <?php } ?>
         </tbody>
         </table>
-        <br>
-        <div class="alert" style="display: <?php echo $show ?>;">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-            <strong><?php echo "Data not found!"; ?></strong>
-        </div>
     </div>    
 
     <?php  include 'footer.php'; ?>
