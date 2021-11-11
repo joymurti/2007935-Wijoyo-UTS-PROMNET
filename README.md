@@ -19,5 +19,5 @@ Tugas UTS Proment Wijoyo
 
 ### NOTE: Jika ada bug tolong laporkan segera !!!
 
-### LINK PENJELASAN CODE
-https://drive.google.com/drive/folders/1Tr18iuneFI6hgM4w0sXTtrQZlv2qZ2RE?usp=sharing
+### LINK VIDEO PENJELASAN CODE
+https://www.canva.com/design/DAEvY3QX2u0/JzywiE45pUOcRARHOMqIVA/watch?utm_content=DAEvY3QX2u0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
