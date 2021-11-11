@@ -20,4 +20,5 @@ Tugas UTS Promenet Wijoyo
 ### NOTE: Jika ada bug tolong laporkan segera !!!
 
 ### LINK VIDEO PENJELASAN CODE
-https://www.canva.com/design/DAEvY3QX2u0/JzywiE45pUOcRARHOMqIVA/watch?utm_content=DAEvY3QX2u0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+- https://www.youtube.com/watch?v=gmGDDaQL8xw
+- https://www.canva.com/design/DAEvY3QX2u0/JzywiE45pUOcRARHOMqIVA/watch?utm_content=DAEvY3QX2u0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
